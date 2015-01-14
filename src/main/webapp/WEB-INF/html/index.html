@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="AngularCourseApp">
+<head>
+    <meta charset="utf-8">
+    <title>Service App</title>
+    <link rel="stylesheet" href="resources/css/app.css"/>
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+<div id="wrapper">
+	<a class="brand" href="http://www.cogentinfo.com/" style="padding-top: 6px; padding-bottom: 0px;">
+      <img class="small-image thumbnail" src="resources/images/cogentPicture.jpg" style="max-width:180px; margin-left: -3.5cm;">
+    </a>
+    <ul class="menu" style="margin-top: -1.7cm; font-size: 150%;">
+        <li><a href="#/class1">C1</a></li>
+    </ul>
+    <hr class="" />
+    <div ng-view></div>
+
+</div>
+        
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-route.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-resource.min.js"></script>
+<script src="resources/js/app.js"></script>
+<script src="resources/js/services.js"></script>
+<script src="resources/js/controllers/Class1Controller.js"></script>
+<script src="resources/js/filters.js"></script>
+<script src="resources/js/directives.js"></script>
+</body>
+</html>

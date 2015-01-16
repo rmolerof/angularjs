@@ -1,1 +1,18 @@
 <u class="lead">Session 1:</u>
+<p>My first line of AJS</p>
+<p>{{"Rudy" + " Molero"}}</p>
+<p>Rudy Molero</p>
+<p>{{100 + 1200}}</p>
+<p>{{testVar}}</p>
+
+<div class="container">
+	<input type="text" ng-model="name">
+	<h4>You just entered {{name}}.</h4>
+</div>
+
+<span class="container" data-ng-init="countries=['peru', 'china', 'india']">
+	<ul>
+		<li data-ng-repeat="country in countries">{{country}}</li>
+	</ul>
+</span>
+<hr>

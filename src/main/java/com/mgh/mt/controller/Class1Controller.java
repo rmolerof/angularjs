@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Class1Controller {
 
     @RequestMapping("/layout")
-    public String getCarPartialPage() {
+    public String getClass1LayoutPage() {
         return "class1/layout";
     }
 }

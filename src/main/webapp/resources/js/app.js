@@ -12,8 +12,13 @@ App.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'class1/layout',
         controller: Class1Controller
     });
+    
+    $routeProvider.when('/class2', {
+        templateUrl: 'class2/layout',
+        controller: Class2Controller
+    });
 
-    $routeProvider.otherwise({redirectTo: '/class1'});
+    $routeProvider.otherwise({redirectTo: '/class2'});
 }]);
 
 App.config(['$httpProvider', function($httpProvider) {

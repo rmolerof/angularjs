@@ -7,7 +7,7 @@
 
 <div class="container">
 	<input type="text" ng-model="name">
-	<h4>You just entered {{name}}.</h4>
+	<h4>You just entered {{name}}. Great Entered.</h4>
 </div>
 
 <span class="container" data-ng-init="countries=['peru', 'china', 'india']">
@@ -16,3 +16,22 @@
 	</ul>
 </span>
 <hr>
+
+<u class="lead">Session 2:</u>
+<p>Product name: {{product.name}}</p>
+<p>Product price: &#36 {{product.price}}</p>
+
+<em>Built-in directives: ng-show</em>
+<div ng-show="product.onSale">
+	<p>Product name: {{product.name}}</p>
+	<p>Product price: &#36 {{product.price}}</p>
+	<button ng-show="!product.soldOut">Add to Cart</button>
+</div>
+
+<em>Built-in directives: ng-repeat</em>
+<div ng-repeat="product in products | orderBy: '-price' | limitTo: 3">
+	<p>Product index: {{$index + 1}}</p>
+	<p>Product name: {{product.name}}</p>
+	<p>Product price: {{product.price  | currency:"USD"}}</p>
+	<p>Product description: {{product.description}}</p>
+</div>

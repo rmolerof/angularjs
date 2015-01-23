@@ -34,7 +34,7 @@ var Class3Controller = function($scope, $http) {
 	
 	$scope.products = gems;
 	
-	$scope.tab = 3;
+	$scope.tab = 1;
 	
 	$scope.isSelected = function(checkTab){
 		return checkTab === $scope.tab;
@@ -43,4 +43,25 @@ var Class3Controller = function($scope, $http) {
 	$scope.selectTab = function(setTab){
 		$scope.tab = setTab;
 	};
+	$scope.message = "Message defined in page controller";
 };
+
+App.controller("PanelController", function($scope){
+	$scope.messageInController = "In Panel Controller:" + $scope.message;
+	this.tab = 4;
+	this.selectTab = function(setTab){
+		this.tab = setTab;
+	};
+	this.isSelected = function(checkTab){
+		return checkTab === this.tab;
+	};
+});
+
+App.controller("ReviewController", function($scope){
+	this.review = {};
+	this.addReview = function(product){
+		this.review.createdOn = Date.now();
+		product.reviews.push(this.review);
+		this.review = {};
+	};
+});

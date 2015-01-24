@@ -1,0 +1,20 @@
+<u class="lead">Session 6:</u>
+
+<p><em><b>Directives: ng-include</b></em></p>
+<div ng-repeat="product in products">
+	<img ng-src="{{product.images[0].thumb}}" style="max-height:40px"/>
+	<div ng-include="'resources/templates/class4/product-title.html'"></div>
+</div>
+
+<!-- Using custom directives -->
+<p><em><b>Directives: Element custom-directives</b></em></p>
+<div ng-repeat="product in products">
+	<img ng-src="{{product.images[0].thumb}}" style="max-height:40px"/>
+	<product-title></product-title>
+</div>
+
+<p><em><b>Directives: Attribute custom-directives</b></em></p>
+<div ng-repeat="product in products">
+	<img ng-src="{{product.images[0].thumb}}" style="max-height:40px"/>
+	<div product-title-attribute></div>
+</div>

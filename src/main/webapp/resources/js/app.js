@@ -22,7 +22,12 @@ App.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'class3/layout',
         controller: Class3Controller
     });
-
+    
+    $routeProvider.when('/class4', {
+        templateUrl: 'class4/layout',
+        controller: Class4Controller
+    });
+    
     $routeProvider.otherwise({redirectTo: '/class1'});
 }]);
 

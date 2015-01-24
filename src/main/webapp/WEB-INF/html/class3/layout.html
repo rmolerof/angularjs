@@ -1,4 +1,4 @@
-<u class="lead">Session 4:</u>
+<u class="lead">Session 5:</u>
 
 <p><em><b>Tabs: Tabset with controller</b></em></p>
 <div>
@@ -65,6 +65,13 @@
 			
 			<form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
 									ng-submit="reviewCtrl.addReview(product)">
+				<!-- Review area -->					
+				<blockquote ng-show="reviewCtrl.review.stars || reviewCtrl.review.body || reviewCtrl.review.author">
+					<b>Stars: {{reviewCtrl.review.stars}}</b>
+					{{reviewCtrl.review.body}}
+					<cite>- {{reviewCtrl.review.author}}</cite>
+				</blockquote>					
+				
 				<select ng-model="reviewCtrl.review.stars" required>
 					<option value="">Rate the product</option>
 					<option value="1">1 star</option>

@@ -48,7 +48,7 @@ var Class3Controller = function($scope, $http) {
 
 App.controller("PanelController", function($scope){
 	$scope.messageInController = "In Panel Controller:" + $scope.message;
-	this.tab = 4;
+	this.tab = 1;
 	this.selectTab = function(setTab){
 		this.tab = setTab;
 	};

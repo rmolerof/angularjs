@@ -6,7 +6,7 @@
 	<div ng-include="'resources/templates/class4/product-title.html'"></div>
 </div>
 
-<!-- Using custom directives -->
+Using custom directives
 <p><em><b>Directives: Element custom-directives</b></em></p>
 <div ng-repeat="product in products">
 	<img ng-src="{{product.images[0].thumb}}" style="max-height:40px"/>
@@ -17,4 +17,12 @@
 <div ng-repeat="product in products">
 	<img ng-src="{{product.images[0].thumb}}" style="max-height:40px"/>
 	<div product-title-attribute></div>
+</div>
+
+<u class="lead">Session 7:</u>
+<p><em><b>Directives with a controller</b></em></p>
+<div ng-repeat="product in products" ng-controller="PanelController as panels">
+	<img ng-src="{{product.images[0].thumb}}" style="max-height:40px"/>
+	<product-panels></product-panels>
+	<tab-description-controlled></tab-description-controlled>
 </div>

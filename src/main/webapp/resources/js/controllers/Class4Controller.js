@@ -48,3 +48,17 @@ App.directive('productTitleAttribute', function(){
 	};
 });
 
+App.directive('productPanels', function(){
+	return{
+		restrict: 'E',
+		templateUrl: 'resources/templates/class4/product-panels.html'
+	};
+});
+
+App.directive('tabDescriptionControlled', function(){
+	return{
+		restrict: 'E',
+		templateUrl: 'resources/templates/class4/tab-description-controlled.html'
+	};
+});
+

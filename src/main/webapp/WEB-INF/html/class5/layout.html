@@ -1,0 +1,17 @@
+<u class="lead">Session 7:</u>
+
+<p><em><b>Dependencies</b></em></p>
+<div ng-repeat="product in products" ng-controller="PanelController as panels">
+	<product-gallery></product-gallery>
+	<product-panels></product-panels>
+	<product-title-controlled></product-title-controlled>
+</div>
+
+<p><em><b>Services</b></em></p>
+<div ng-controller="StoreController as store">
+	<div ng-repeat="product in store.products" ng-controller="PanelController as panels">
+		<product-gallery-simple></product-gallery-simple>
+		<product-panels></product-panels>
+		<product-title-controlled></product-title-controlled>
+	</div>
+</div>
